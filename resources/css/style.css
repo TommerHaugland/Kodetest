@@ -348,6 +348,10 @@ footer p {
 		margin: 0;
 	}
 
+  #digdesign {
+    width: 100px;
+  }
+
   #return-to-top {
     display: none;
   }
@@ -402,6 +406,11 @@ footer p {
 		left: 30%;
 		top: 66%;
 	}
+
+  .image-group {
+    width: 100%;
+    height: auto;
+  }
   #return-to-top {
     display: none;
   }
