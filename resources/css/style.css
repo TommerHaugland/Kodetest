@@ -7,12 +7,21 @@ body {
 	margin: 0 auto;
 }
 
-.mobile-nav {
-  display: none;
+.container {
+	margin: 0 auto;
+  max-width: 1200px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  padding-top: 10%;
 }
 
-nav {
-	padding: 15px;
+
+
+
+.mobile-nav {
+  display: none;
 }
 
 .logo {
@@ -23,6 +32,7 @@ nav {
 	display: -webkit-flex;
 	display: flex;
   align-items: center;
+  padding: 0 15px;
 }
 
 .main-nav li:first-child {
@@ -39,20 +49,9 @@ nav li a {
 	color: #1A0050;
 }
 
-.container-fluid {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.container {
-	margin: 0 auto;
-	display: flex;
-  flex-direction: column;
-  width: 1170px;
-}
-.row {
-  display: flex;
-  align-items: center;
-  padding-top: 10%;
+.active {
+  border-bottom: 1px solid #1A0050;
+
 }
 
 .hero-container {
@@ -71,7 +70,11 @@ nav li a {
 }
 
 .hero-container:first-child {
-	padding-top: 10%;
+	padding: 6% 0;
+}
+
+#hero-image > img {
+  max-width: 1200px;
 }
 
 .image-group {
@@ -82,7 +85,7 @@ nav li a {
 }
 
 .image-group img {
-	width: 50px;
+
 	padding-bottom: 15px;
 }
 
@@ -102,9 +105,7 @@ nav li a {
 }
 
 .group-b {
-	justify-content: space-between;
-
-  width: 550px;
+	justify-content: space-around;
 
 }
 
@@ -113,7 +114,7 @@ nav li a {
 }
 
 .hero {
-  padding-bottom: 15%;
+  padding-bottom: 5%;
 }
 
 #hero-image {
@@ -127,19 +128,28 @@ nav li a {
 
 .info-box {
 	background: #1A0050;
-	padding: 60px 40px;
+	padding: 70px 40px;
 	color: white;
-	font-weight: normal;
 	position: absolute;
-	bottom: -141%;
+	bottom: -161%;
 	left: 40%;
 	z-index: 3;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+  opacity: 0.8;
 }
 
-.small-picture {
+.info-box p {
+  width: 68%;
+    text-align: center;
+}
+
+.info-box h3 {
+  margin-bottom: 47px;
+}
+
+.hero-picture {
   max-width: 1200px;
 }
 
@@ -155,7 +165,7 @@ nav li a {
 }
 
 #contact {
-  padding: 10% 0;
+  padding: 50px 0 50px 0;
 }
 
 .row-big img{
@@ -164,7 +174,7 @@ nav li a {
 
 footer {
   background-color: #1A0050;
-  height: 800px;
+  height: 600px;
   color: white;
 }
 
@@ -177,6 +187,15 @@ footer {
   width: 25%;
 }
 
+
+hr {
+    display: block;
+    height: 10px;
+    border: 0;
+    width: 25px;
+    border-top: 1px solid #FF6F5A;
+
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -200,6 +219,15 @@ p.vspace {
   margin-top: 20px;
 }
 
+.vspace a {
+  text-decoration: none;
+  color: white;
+}
+
+.vspace a:hover {
+  color: #FF6F5A;
+}
+
 footer p {
   line-height: 1.5;
 }
@@ -208,20 +236,177 @@ footer p {
   margin-top: 45px;
 }
 
-@media only screen and (max-width: 480px) {
-  body {
+#facebook > a {
+  text-decoration: none;
+  color: white;
+}
 
+#insta > a {
+  text-decoration: none;
+  color: white;
+}
+
+
+@media screen and (max-width: 768) and (min-width: 375px) {
+  .container {
+    max-width: 768px;
   }
 
-  .group {
-
+  .container img {
+    max-width: 768px;
   }
 
-  nav {
-    display: none;
+  .row img {
+    max-width: 768px;
   }
 
-  .mobile-nav {
 
+
+  #hero-image > img {
+      max-width: 768px;
   }
 }
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+  nav {
+
+  }
+
+  .hero-container {
+  max-width: 900px;
+  }
+
+  .hero-picture {
+    width: 900px;
+  }
+
+  .left-picture {
+  width : 900px;
+  }
+
+  #hero-image {
+  max-width: 900px;
+
+  }
+  .main-nav {
+
+  }
+  .main-nav li:first-child {
+  max-width: 900px;
+  }
+  #hero-image > img {
+  max-width: 900px;
+  }
+
+  .row {
+  max-width: 900px;
+  }
+
+  .container-fluid {
+  max-width: 900px;
+  margin: 0 auto;
+  }
+
+  .container-fluid img {
+  max-width: 400px;
+  }
+
+  .info-box {
+    bottom: -107%;
+  }
+
+  .info-box h3 {
+
+  }
+
+  .info-box p {
+
+  }
+
+  .column {
+
+  }
+
+  .social-icon p{
+
+  }
+  }
+
+@media screen and (max-width: 375px) {
+
+.hero-container {
+  display: none;
+}
+
+.hero-picture {
+  max-width: 375px;
+}
+
+.left-picture {
+  width: 100%;
+  margin: 0;
+}
+
+#hero-image {
+  padding: 0;
+  margin: 0;
+
+}
+  .main-nav {
+
+  flex-direction: column;
+  }
+  .main-nav li:first-child {
+    margin: 0 auto;
+}
+#hero-image > img {
+    max-width: 375px;
+  }
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.row img {
+  max-width: 375px;
+}
+
+.container-fluid {
+  max-width: 375px;
+}
+
+.container-fluid img {
+  width: 100%;
+}
+
+.info-box {
+  bottom: 37%;
+  left: 0;
+  padding: 50px 40px;
+
+}
+
+.info-box h3 {
+  font-size: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+.info-box p {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.column {
+  width: 100%;
+}
+
+.social-icon p{
+  display: none;
+}
+}
+
+@media screen and (min-width: 600px) { /* ...tablet styles here... */ }
