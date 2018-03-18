@@ -39,16 +39,22 @@ nav li a {
 	color: darkmagenta;
 }
 
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .container {
 	margin: 0 auto;
 	display: flex;
   flex-direction: column;
-  padding: 0 50px;
+  width: 1170px;
 }
 .row {
   display: flex;
   align-items: center;
+  padding-top: 10%;
 }
+
 .hero-container {
 	display: flex;
 	align-items: center;
@@ -102,11 +108,15 @@ nav li a {
 
 }
 
-.middle-section {
-	background-color: white;
+.left-picture {
+  margin-right: 5%;
 }
 
-#conthpic {
+.hero {
+  padding-bottom: 15%;
+}
+
+#hero-image {
 	z-index: 2;
 	margin-top: -50px;
 	margin-right: auto;
@@ -121,7 +131,7 @@ nav li a {
 	color: white;
 	font-weight: normal;
 	position: absolute;
-	bottom: -127%;
+	bottom: -141%;
 	left: 40%;
 	z-index: 3;
 	display: flex;
@@ -129,7 +139,20 @@ nav li a {
 	align-items: center;
 }
 
+.small-picture {
+  max-width: 1200px;
+}
 
+.info-line {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.info-line hr {
+  width: 1%;
+  margin-top: 10px;
+  column-rule-color: red;
+}
 @media only screen and (max-width: 480px) {
   body {
 
