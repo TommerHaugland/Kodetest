@@ -328,6 +328,10 @@ footer p {
 	.icon-group {
 		width: 100%;
 	}
+
+  #kontakt > div > div:nth-child(1) {
+    margin: 0;
+  }
 	.image-group {
 		display: flex;
 		flex-direction: column;
