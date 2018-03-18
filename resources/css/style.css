@@ -14,11 +14,17 @@ body {
 .row {
   display: flex;
   align-items: center;
-  padding-top: 10%;
+  padding-top: 6%;
+  justify-content: space-between;
 }
 
+.row:first-child {
+  padding-top: 90px;
+}
 
-
+.left-align {
+  margin-left: 5.1%;
+}
 
 .mobile-nav {
   display: none;
@@ -70,11 +76,11 @@ nav li a {
 }
 
 .hero-container:first-child {
-	padding: 6% 0;
+	padding: 50px 0;
 }
 
 #hero-image > img {
-  max-width: 1200px;
+  width: 100%;
 }
 
 .image-group {
@@ -85,7 +91,6 @@ nav li a {
 }
 
 .image-group img {
-
 	padding-bottom: 15px;
 }
 
@@ -106,11 +111,6 @@ nav li a {
 
 .group-b {
 	justify-content: space-around;
-
-}
-
-.left-picture {
-  margin-right: 5%;
 }
 
 .hero {
@@ -120,32 +120,29 @@ nav li a {
 #hero-image {
 	z-index: 2;
 	margin-top: -50px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 0;
 	position: relative;
 }
 
-.info-box {
+.tag{
 	background: #1A0050;
 	padding: 70px 40px;
 	color: white;
 	position: absolute;
-	bottom: -161%;
-	left: 40%;
+  left: 40%;
+  top: 78%;
 	z-index: 3;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-.info-box p {
+.tag p {
   width: 68%;
     text-align: center;
 }
 
-.info-box h3 {
+.tag h3 {
   margin-bottom: 47px;
 }
 
@@ -246,91 +243,65 @@ footer p {
   color: white;
 }
 
-
-@media screen and (max-width: 768) and (min-width: 375px) {
-  .container {
-    max-width: 768px;
+@media screen
+and (min-width: 400px)
+and (max-width: 600px)  {
+  .main-nav {
+    flex-direction: column;
   }
 
-  .container img {
-    max-width: 768px;
-  }
-
-  .row img {
-    max-width: 768px;
-  }
-
-
-
-  #hero-image > img {
-      max-width: 768px;
+  .main-nav li:first-child {
+    margin: 0;
   }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1199px) {
-  nav {
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-width: 1200px)
+  and (max-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
 
-  }
+}
 
-  .hero-container {
-  max-width: 900px;
-  }
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-width: 1200px)
+  and (max-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+}
 
-  .hero-picture {
-    width: 900px;
-  }
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
 
-  .left-picture {
-  width : 900px;
-  }
 
-  #hero-image {
-  max-width: 900px;
+}
 
-  }
+/* Portrait */
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
   .main-nav {
-
+    flex-direction: column;
   }
-  .main-nav li:first-child {
-  max-width: 900px;
+}
+
+/* Landscape */
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .main-nav {
+    flex-direction: column;
   }
-  #hero-image > img {
-  max-width: 900px;
-  }
+}
 
-  .row {
-  max-width: 900px;
-  }
-
-  .container-fluid {
-  max-width: 900px;
-  margin: 0 auto;
-  }
-
-  .container-fluid img {
-  max-width: 400px;
-  }
-
-  .info-box {
-    bottom: -107%;
-  }
-
-  .info-box h3 {
-
-  }
-
-  .info-box p {
-
-  }
-
-  .column {
-
-  }
-
-  .social-icon p{
-
-  }
-  }
 
 @media screen and (max-width: 375px) {
 
@@ -378,24 +349,24 @@ footer p {
   max-width: 375px;
 }
 
-.container-fluid img {
+.container img {
   width: 100%;
 }
 
-.info-box {
+.tag {
   bottom: 37%;
   left: 0;
   padding: 50px 40px;
 
 }
 
-.info-box h3 {
+.tag h3 {
   font-size: 2em;
     width: 100%;
     text-align: center;
 }
 
-.info-box p {
+.tag p {
   text-align: center;
   font-size: 1.5em;
 }
@@ -404,9 +375,5 @@ footer p {
   width: 100%;
 }
 
-.social-icon p{
-  display: none;
-}
-}
 
-@media screen and (min-width: 600px) { /* ...tablet styles here... */ }
+}
