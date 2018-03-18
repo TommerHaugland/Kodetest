@@ -36,7 +36,7 @@ nav li {
 
 nav li a {
 	text-decoration: none;
-	color: darkmagenta;
+	color: #1A0050;
 }
 
 .container-fluid {
@@ -126,7 +126,7 @@ nav li a {
 }
 
 .info-box {
-	background: purple;
+	background: #1A0050;
 	padding: 60px 40px;
 	color: white;
 	font-weight: normal;
@@ -152,6 +152,32 @@ nav li a {
   width: 1%;
   margin-top: 10px;
   column-rule-color: red;
+}
+
+#contact {
+  padding: 10% 0;
+}
+
+.row-big img{
+  width: 100%;
+}
+
+footer {
+  background-color: #1A0050;
+  height: 800px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 @media only screen and (max-width: 480px) {
   body {
