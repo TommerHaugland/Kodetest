@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	font-family: 'Oswald', sans-serif;
+  font-family: Arial, sans-serif;
 	margin: 0 auto;
 }
 
@@ -92,7 +92,7 @@ nav li a {
 
 .icon-group {
 	margin-top: 10%;
-	width: 70%;
+	width: 50%;
 }
 
 .group {
@@ -165,6 +165,11 @@ nav li a {
 footer {
   background-color: #1A0050;
   height: 800px;
+  color: white;
+}
+
+.footer p {
+  font-weight: 300;
 }
 
 .column {
@@ -179,6 +184,30 @@ footer {
     display: table;
     clear: both;
 }
+
+footer .row {
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: flex-start;
+}
+
+
+#socialicons {
+  text-align: center;
+}
+
+p.vspace {
+  margin-top: 20px;
+}
+
+footer p {
+  line-height: 1.5;
+}
+
+#insta {
+  margin-top: 45px;
+}
+
 @media only screen and (max-width: 480px) {
   body {
 
