@@ -282,6 +282,10 @@ footer p {
     transition: all 0.3s ease;
 }
 
+#kontakt > div > div:nth-child(1) {
+  margin: 0 5%;
+}
+
 
 @media only screen and (min-width: 375px) and (max-width: 600px) {
 	.main-nav {
@@ -360,13 +364,19 @@ footer p {
     display: none;
   }
 
+  #socialicons {
+    text-align: center;
+    padding-top: 25px;
+}
   #insta {
     margin: 0;
-    width: 50%;
+    width: 49%;
+    float: left;
   }
 
   #facebook {
-    width: 50%;
+    width: 49%;
+    float: right;
 
   }
 }
