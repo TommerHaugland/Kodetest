@@ -166,7 +166,7 @@ nav li a {
 }
 
 header h3 {
-  padding-bottom: 25px;
+	padding-bottom: 25px;
 }
 
 .row-big img {
@@ -175,8 +175,9 @@ header h3 {
 
 footer {
 	background-color: #1A0050;
-	height: 500px;
+	height: auto;
 	color: white;
+  padding-bottom: 5em;
 }
 
 .footer p {
@@ -246,8 +247,36 @@ footer p {
 }
 
 .hero-container h2 {
-  padding-top: 25px;
+	padding-top: 25px;
 }
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: #1A0050;
+}
+
+#return-to-top i {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
 
 @media only screen and (min-width: 375px) and (max-width: 600px) {
 	.main-nav {
@@ -313,49 +342,66 @@ footer p {
 	#hero-image {
 		margin: 0;
 	}
+
+  #return-to-top {
+    display: none;
+  }
+
+  #return-to-top i {
+    display: none;
+  }
+
+  #insta {
+    margin: 0;
+    width: 50%;
+  }
+
+  #facebook {
+    width: 50%;
+
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 800px) {
-  .container {
-    width: 100%;
-  }
-  .container img {
-    width: 90%;
-height: auto;
-margin: 0 auto;
+	.container {
+		width: 100%;
+	}
+	.container img {
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+	}
+	.row {
+		width: 100%;
+		height: auto;
+		padding-top: 3%;
+		justify-content: space-between;
+	}
+	.left-align {
+		margin: 0;
+	}
+	.responsive {
+		max-width: 300px;
+		height: auto;
+	}
+	#hero-image>img {
+		max-width: 700px;
+	}
+	#hero-image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.tag {
+		padding: 58px 28px;
+		left: 30%;
+		top: 66%;
+	}
+  #return-to-top {
+    display: none;
   }
 
-  .row {
-    width: 100%;
-    height: auto;
-    padding-top: 3%;
-    justify-content: space-between;
+  #return-to-top i {
+    display: none;
   }
-
-  .left-align {
-    margin: 0;
-  }
-
-  .responsive {
-      max-width: 300px;
-      height: auto;
-  }
-
-  #hero-image>img {
-    max-width: 700px;
 }
-
-  #hero-image {
-    display: flex;
-justify-content: center;
-align-items: center;
-  }
-
-  .tag {
-padding: 58px 28px;
-left: 30%;
-top: 66%;
-
-
-  }
- }
