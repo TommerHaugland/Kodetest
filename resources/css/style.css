@@ -33,9 +33,7 @@ body {
 	margin-left: 5%;
 }
 
-img.responsive.half {
-	width: 49%;
-}
+
 .row:first-child {
 	padding-top: 90px;
 }
@@ -301,6 +299,10 @@ footer p {
 	margin: 0 5%;
 }
 
+@media only screen and (min-width: 360) and (max-width: 375px) {
+
+}
+
 @media only screen and (min-width: 375px) and (max-width: 600px) {
 	.main-nav {
 		flex-direction: column;
@@ -325,9 +327,9 @@ footer p {
 		margin: 0 auto;
 }
 	.tag {
-		top: 31%;
-left: 10%;
-    padding: 50px 6px;
+		top: 48%;
+		    left: 23%;
+		    padding: 50px 6px;
 	}
 	.row {
 		padding: 0;
@@ -358,6 +360,7 @@ left: 10%;
 	}
 	.column {
 		width: 100%;
+		text-align: center;
 	}
 	.hero-container {
 		display: none;
