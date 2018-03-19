@@ -145,16 +145,17 @@ nav li a {
 
 .tag {
 	background: #1A0050;
-	padding: 70px 40px;
-	color: white;
-	position: absolute;
-	left: 40%;
-	top: 75%;
-	z-index: 3;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	opacity: 0.9;
+    padding: 55px 30px;
+    color: white;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.9;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .tag p {
@@ -299,10 +300,6 @@ footer p {
 	margin: 0 5%;
 }
 
-@media only screen and (min-width: 360) and (max-width: 375px) {
-
-}
-
 @media only screen and (min-width: 375px) and (max-width: 600px) {
 	.main-nav {
 		flex-direction: column;
@@ -327,9 +324,14 @@ footer p {
 		margin: 0 auto;
 }
 	.tag {
-		top: 48%;
-		    left: 23%;
-		    padding: 50px 6px;
+		top: 74%;
+	    padding: 25px;
+	    left: 50%;
+	}
+
+	.tag h3 {
+		margin-bottom: 47px;
+font-size: 1.2em;
 	}
 	.row {
 		padding: 0;
