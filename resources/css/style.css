@@ -390,6 +390,9 @@ footer p {
 		width: 49%;
 		float: right;
 	}
+	footer p {
+		padding: 5px 15px;
+	}
 }
 
 /* Landscape */
