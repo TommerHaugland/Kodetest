@@ -319,18 +319,15 @@ footer p {
 		width: 100%;
 		height: auto;
 	}
+
+	img.responsive.half {
+    width: 100%;
+		margin: 0 auto;
+}
 	.tag {
-		background: #1A0050;
-		padding: 60px 16px;
-		color: white;
-		position: absolute;
-		top: 41%;
-		left: 14%;
-		z-index: 3;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		opacity: 0.9;
+		top: 31%;
+left: 10%;
+    padding: 50px 6px;
 	}
 	.row {
 		padding: 0;
