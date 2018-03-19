@@ -5,6 +5,7 @@ html {
 body {
 	font-family: Arial, sans-serif;
 	margin: 0 auto;
+	max-width: 960px;
 }
 
 .container {
@@ -110,6 +111,7 @@ nav li a {
 
 .image-group img {
 	padding-bottom: 30px;
+	width: 50px;
 }
 
 .image-group span {
@@ -153,7 +155,7 @@ nav li a {
     align-items: center;
     opacity: 0.9;
     position: absolute;
-    top: 92%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
