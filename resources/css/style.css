@@ -420,6 +420,7 @@ footer p {
 	}
 }
 
+
 @media only screen and (min-width: 600px) and (max-width: 800px) {
 	.container {
 		width: 100%;
@@ -428,6 +429,11 @@ footer p {
 		width: 90%;
 		height: auto;
 		margin: 0 auto;
+	}
+
+	img.responsive.half {
+		width: 40%;
+		padding: 3.3%;
 	}
 	.row {
 		width: 100%;
